@@ -86,7 +86,7 @@ ol {
 
 .search-form {
   display: flex;
-  padding: 16px 0 5px;
+  padding: 16px;
   justify-content: space-between;
 }
 
