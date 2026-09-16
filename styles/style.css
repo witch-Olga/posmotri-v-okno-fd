@@ -9,7 +9,7 @@ html {
 }
 
 .page {
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   inline-size: 1200px;
@@ -66,9 +66,8 @@ ol {
 .content {
   display: flex;
   align-items: end;
-  gap: 32px;
-  /*padding: 133px 30px;
-  margin-bottom: auto;*/
+  gap: 30px;
+  max-width: 1140px;
   width: 100%;
 }
 
@@ -80,13 +79,14 @@ ol {
 
 .result__video {
   width: 100%;
+  height: 100%;
   object-fit: fill;
   object-position: center;
 }
 
 .search-form {
   display: flex;
-  padding-top: 32px;
+  padding: 16px 0 5px;
   justify-content: space-between;
 }
 
@@ -102,17 +102,19 @@ ol {
 
 .search-form__textfield {
   appearance: none;
+  min-inline-size: 225px;
+  min-block-size: 27px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background-color: inherit;
   color: inherit;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: inherit;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+  font-size: 16px;
 }
 
 .search-form__textfield:focus {
@@ -197,15 +199,16 @@ ol {
 
 .content__details {
   width: 100%;
+  max-width: 399px;
 }
 
-.title{
+.title {
   font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 
 .content__accent {
@@ -214,7 +217,7 @@ ol {
 
 .content__list-container {
   position: relative;
-  max-height: 298px;
+  height: 303px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding: 0 3px 3px;
@@ -249,10 +252,8 @@ ol {
 }
 
 .content__video-card {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 2px;
-  max-height: 103px;
 }
 
 .content__video-card-title {
@@ -263,6 +264,10 @@ ol {
   overflow-x: clip;
 }
 
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
 .content__video-card-description {
   font-size: 18px;
   font-weight: 400;
@@ -271,7 +276,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 100%;
+  width: 194px;
+  height: 103px;
   object-fit: fill;
   object-position: center;
 }
